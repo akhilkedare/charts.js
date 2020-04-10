@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>myChart</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+	<canvas id="myChart" width="500" height="500"></canvas>
+
+	<script>
+		var ctx = document.getElementById('myChart').getContext('2d');
+        var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: ['January,31', 'February,29', 'March,31', 'April,9'],
+        datasets: [{
+            label: 'Total no. of cases',
+            backgroundColor: 'rgb(255, 255, 255)',
+            borderColor: 'rgb(0, 255, 0)',
+            data: [0, 3, 1397, 6725]
+        }]
+    },
+
+
+
+    // Configuration options go here
+    options: {}
+});
+	</script>
+
+</body>

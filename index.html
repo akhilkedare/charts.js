@@ -75,7 +75,22 @@
 
 
     // Configuration options go here
-    options: {}
+    options: {
+      title: {
+            display: true,
+            text: 'Total no. of COVID-19 cases in world'
+        },
+
+          scales: {
+            yAxes: [{
+              scaleLabel: {
+                display: true,
+                labelString: 'No. of cases'
+      }
+    }]
+  }
+
+    }
 });
     </script>
 </body>

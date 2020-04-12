@@ -22,20 +22,29 @@
 
     // The data for our dataset
     data: {
-        labels: ['January,31', 'February,29', 'March,31', 'April,9'],
+
         datasets: [{
-            label: 'Total no. of cases',
+            label: 'India',
             backgroundColor: 'rgb(255, 255, 255)',
             borderColor: 'rgb(0, 255, 0)',
-            data: [0, 3, 1397, 6725]
-        }]
+            data: [0, 3,1397,6725]
+        },
+        {
+            label: 'Australia',
+            borderColor: 'rgb(0, 0, 255)',
+            data: [500, 1150, 3050, 6050],
+
+            // Changes this dataset to become a line
+            type: 'line'
+        }],
+        labels: ['January,31', 'February,29', 'March,31', 'April,9']
     },
+    
 
 
 
     // Configuration options go here
     options: {}
 });
-	</script>
-
+    </script>
 </body>
